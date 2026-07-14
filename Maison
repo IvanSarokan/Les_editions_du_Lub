@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>LES EDITIONS DU LUBE
+
+</title>
+  <style>
+  
+  body {
+    -webkit-user-select: none; /* Chrome/Safari */
+    -moz-user-select: none;    /* Firefox */
+    -ms-user-select: none;     /* IE/Edge */
+    user-select: none;         /* Standard */
+  }
+<script>
+  document.addEventListener('contextmenu', event => event.preventDefault());
+</script>
+    body {
+      font-family: 'Helvetica Neue', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      padding: 2em;
+      line-height: 1.6;
+    }
+
+    main {
+      max-width: 60ch;
+      margin: auto;
+      text-align: justify;
+    }
+
+    img {
+      max-width: 200px;
+      border-radius: 8px;
+      display: block;
+      margin: 1em auto;
+    }
+
+    section {
+      margin-top: 3em;
+    }
+
+    button {
+      display: block;
+      margin: 3em auto;
+      padding: 1em 2em;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 1em;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <main>
+    <h1>LES EDITIONS DU LUBE
+
+</h1>
+    <img src="photo3.jpg" alt="Photo de l'editeur">
+    <p>Intialement, Ivan Sarokan est publié  par les éditions du Luberon. 
+Cette vieille  maison, crée par Monique Roustan - une amie, anciennement maire de Lauris - ne peut demeurer
+pour la suite
+le port d'ancrage d'une œuvre aussi volumineuse que diverse. Les éditions du Lube prennent donc le relais
+afin de ne pas dépendre de grandes maisons d'édition. 
+D'autres auteurs viendront sans doute augmenter l'aventure
+et lui donner réelle dimension éditoriale. </p>
+
+    <img src="photo4.jpg" alt="La maison d'édition"> 
+    <section>
+      <h2>Un refuge pour demain</h2>
+      <p>Les éditions du Lube.</p>
+
+
+      <p>Situé au cœur du Luberon Sud, à 70 kilomètres de Marseille, à égale distance d'APT de CAVAILLON et de PERTUIS, 
+le village de Lauris est le lieu idéal pour commencer cette aventure. Une terre en partie préservée 
+des migrations saisonnières et touristiques, 
+une terre qui a su conserver son cachet par l'apport de nouveaux paysans. Une terre qui n'a pas trop été défigurée
+par la spéculation immobilière ;
+pas tout à fait un hâvre pour retraités oisifs, pas tout à fait un dortoir pour travailleurs marginalisés, 
+loin des clichés et à l'écart des modes, Lauris a réussi à préserver un peu de son âme. 
+Village exemplaire, dirigée aujourd'hui par un ami écrivain, Eric Fontanrava, 
+Lauris hébergera donc - quel luxe - deux maisons d'édition complentaires.
+</p>
+
+    <section>
+      <h2>Sarokan - Les deux figuiers</h2>
+      <p>Pour commander le livre ou pour obtenir plus de renseignement sur le premier opus des œuvres d'Ivan Srokan, 
+ou l'auteur lui même, vous pouvez consulter : la page qui lui est consacrée sur le site, 
+le site de l'auteur, ou envoyer un mail à l'adresse suivante afin de commander les deux figuiers:
+
+</p>
+    </section>
+
+    <button onclick="window.location.href='mailto:Ivan.Sarokan@orange.fr'">
+  VISITER LE SITE DE L'AUTEUR
+    </button>
+  </main>
+
+</p>
+
+</p>
+    </section>
+
+    <button onclick="window.location.href='https://ivansarokan.github.io/Les_editions_du_Lub/index.html'">
+  POURSUIVRE LA VISITE sur la PAGE d'IVAN
+    </button>
+  </main>
+
+</p>
+    </section>
+
+    <button onclick="window.location.href='https://ivansarokan.fr/index.html'">
+  COMMANDER LE LIVRE
+    </button>
+  </main>
+
+</body>
+</html>
