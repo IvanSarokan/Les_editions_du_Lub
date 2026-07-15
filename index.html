@@ -19,8 +19,16 @@
     p { margin-bottom: 1rem; text-align: justify; }
     
     img { max-width: 250px; width: 100%; height: auto; border-radius: 8px; display: block; margin: 2rem auto; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); break-inside: avoid; }
-    section { background-color: white; padding: 2rem; border-radius: 8px; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05); margin-bottom: 2rem; break-inside: avoid; }
     
+    section { 
+    background-color: white; 
+    padding: 2rem; 
+    border-radius: 8px; 
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05); 
+    margin-bottom: 2rem; 
+    /* On change 'avoid' pour 'auto' afin de permettre au navigateur de couper la section */
+    break-inside: auto; 
+}
     ul { margin-left: 2rem; margin-bottom: 1rem; }
     a { color: #007BFF; text-decoration: none; transition: color 0.3s ease; }
     a:hover { color: #0056b3; text-decoration: underline; }
@@ -59,12 +67,9 @@
         <p>Nous ne promettons ni des succès immédiats ni des records de vente. Nous promettons de choisir chaque manuscrit avec sérieux, d'accompagner chaque auteur avec loyauté et de publier des livres que nous serons toujours fiers de défendre. Les Éditions du Lub sont fondées sur cette conviction : la littérature est vivante. Notre rôle est de lui offrir les livres qui la nouriront demain.</p>
       </section>
 
-     
-.debut-colonne {
-  break-before: column;
 }
       <section>
-        <h2>Chaque feuille s'écrit : figuiers !</h2>
+      <h2 style="break-before: column;">Chaque feuille s'écrit figuier</h2>
         <h3>Les Éditions du Lub - Dossier institutionnel</h3>
         <h4>Présentation</h4>
         <p>Les Éditions du Lub sont une maison d'édition indépendante consacrée à la littérature de création. Elles sont nées de la volonté de défendre des textes dont la qualité d'écriture prime sur les tendances du marché. La maison privilégie une croissance progressive fondée sur la cohérence du catalogue et la relation durable avec ses auteurs.</p>
