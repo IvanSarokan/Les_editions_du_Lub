@@ -1,67 +1,109 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Éditions du Lub - Maison d'édition indépendante</title>
   <style>
-    * { margin:0; padding:0; box-sizing:border-box; }
-    body { font-family:system-ui, sans-serif; background:#f9f9f9; color:#333; line-height:1.6; user-select:none; }
-    main { max-width:65ch; margin:0 auto; padding:2rem; }
-    h1, h2 { text-align:center; }
-    h1 { font-size:2rem; margin-bottom:1.5rem; letter-spacing:.05em; }
-    h2 { font-size:1.5rem; margin:2rem 0 1rem; }
-    h3 { font-size:1.2rem; margin:1.5rem 0 .8rem; }
-    p { margin-bottom:1rem; }
-    img { max-width:250px; width:100%; height:auto; border-radius:8px; display:block; margin:2rem auto; box-shadow:0 2px 8px rgba(0,0,0,.1); }
-    section { margin-top:3rem; background:white; padding:2rem; border-radius:8px; box-shadow:0 1px 3px rgba(0,0,0,.05); }
-    ul { margin:0 0 1rem 2rem; }
-    a { color:#007BFF; text-decoration:none; transition:.3s; }
-    a:hover { color:#0056b3; text-decoration:underline; }
-    .cta { text-align:center; margin-top:2rem; padding-top:2rem; border-top:1px solid #e0e0e0; }
-    .btn { display:inline-block; margin-top:1rem; padding:1em 2em; background:#007BFF; color:white; border-radius:5px; }
-    footer { text-align:center; padding:2rem; margin-top:3rem; border-top:1px solid #ddd; color:#666; font-size:.9rem; }
-    @media (max-width:768px) { main { padding:1rem; } h1 { font-size:1.5rem; } section { padding:1.5rem; } }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Helvetica Neue', sans-serif; background-color: #f9f9f9; color: #333; line-height: 1.6; user-select: none; }
+    main { max-width: 1000px; margin: 0 auto; padding: 2rem; }
+    
+    /* Gestion des colonnes */
+    .container { column-count: 2; column-gap: 3rem; }
+    
+    h1 { font-size: 2rem; margin-bottom: 2rem; text-align: center; letter-spacing: 0.05em; break-after: column; }
+    h2 { font-size: 1.5rem; margin-top: 2rem; margin-bottom: 1rem; text-align: center; }
+    h3 { font-size: 1.2rem; margin-top: 1.5rem; margin-bottom: 0.8rem; }
+    h4 { font-size: 1.1rem; margin-top: 1.2rem; margin-bottom: 0.5rem; }
+    p { margin-bottom: 1rem; text-align: justify; }
+    
+    img { max-width: 250px; width: 100%; height: auto; border-radius: 8px; display: block; margin: 2rem auto; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); break-inside: avoid; }
+    section { background-color: white; padding: 2rem; border-radius: 8px; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05); margin-bottom: 2rem; break-inside: avoid; }
+    
+    ul { margin-left: 2rem; margin-bottom: 1rem; }
+    a { color: #007BFF; text-decoration: none; transition: color 0.3s ease; }
+    a:hover { color: #0056b3; text-decoration: underline; }
+    
+    .cta-section { text-align: center; margin-top: 2rem; padding-top: 2rem; border-top: 1px solid #e0e0e0; break-before: column; }
+    .cta-button { display: inline-block; margin-top: 1rem; padding: 1em 2em; background-color: #007BFF; color: white; text-decoration: none; border-radius: 5px; transition: background-color 0.3s ease; }
+    .cta-button:hover { background-color: #0056b3; }
+    
+    footer { text-align: center; padding: 2rem; margin-top: 3rem; border-top: 1px solid #ddd; color: #666; font-size: 0.9rem; }
+
+    @media (max-width: 768px) {
+      .container { column-count: 1; }
+      main { padding: 1rem; }
+    }
   </style>
 </head>
 <body>
   <main>
     <h1>Les Éditions du Lub</h1>
-    <img src="photo5.jpg" alt="Portrait de l'auteur">
+    
+    <div class="container">
+      <img src="photo5.jpg" alt="Portrait de l'auteur - Éditions du Lub">
 
-    <section>
-      <h2>Le Manifeste</h2>
-      <h3>Pourquoi une nouvelle maison ?</h3>
-      <p>Publier est un acte de transmission. Les Éditions du Lub naissent de la conviction que la littérature doit créer ses propres modes plutôt que les suivre.</p>
-      <h3>Vers une littérature durable</h3>
-      <p>Nous privilégions l'exigence d'écriture dans le roman, le récit, la fable et l'essai. La valeur d'un texte réside dans sa vivacité, non dans sa notoriété.</p>
-      <h3>Indépendance et cohérence</h3>
-      <p>Libres des impératifs de rentabilité immédiate, nous bâtissons un catalogue où les œuvres dialoguent. Le numérique n'est qu'un prolongement du livre imprimé, notre référence absolue.</p>
-      <h3>La maison est ouverte</h3>
-      <p>Nous croyons aux échanges avec les libraires, traducteurs et chercheurs. Nous ne promettons pas le succès facile, mais un accompagnement loyal et une défense exigeante de chaque œuvre.</p>
-    </section>
+      <section>
+        <h2>Le Manifeste des Éditions du Lub</h2>
+        <h3>Pourquoi une nouvelle maison d'édition ?</h3>
+        <p>Publier un livre, c'est transmettre une voix à la rencontre entre un auteur et un auditeur ; l'éditeur n'en est ni le propriétaire ni l'arbitre, mais le passeur. Les Éditions du Lub sont nées de cette conviction : la littérature n'a pas pour vocation de suivre les modes, mais de les créer.</p>
+        <h3>Vers une littérature durable !</h3>
+        <p>Privilégiant les œuvres qui demeurent, romans, récits, fables, chroniques, textes historiques ou philosophiques, nous publions des textes ayant une exigence d'écriture et une vision du monde. La qualité d'un texte ne dépend ni de son genre ni de sa notoriété, mais de sa vivacité.</p>
+        <h3>Une maison indépendante</h3>
+        <p>L'indépendance nous permet de choisir nos publications selon leur valeur littéraire, sans dépendre des effets de mode, des impératifs de rentabilité ou de calendrier. Chaque ouvrage publié engage la réputation de la maison dans une relation de confiance avec les auteurs et les lecteurs, dans des relations à long terme, loin des succès éphémères ou commerciaux.</p>
+        <h3>Pour un catalogue cohérent</h3>
+        <p>Les Éditions du Lub souhaitent constituer, au fil des années, un ensemble d'œuvres qui dialoguent entre elles : romans, fictions historiques, récits philosophiques, textes oubliés, traductions choisies et essais littéraires. Chaque nouveau livre doit enrichir l'ensemble, avec le numérique comme prolongement : le livre imprimé demeure notre référence, mais le livre numérique n'est pas son adversaire. Nous voulons offrir aux lecteurs plusieurs formes d'accès à une même œuvre, tout en respectant le travail des auteurs et la valeur de la création. PDF, EBOOK, Livres audios, Vidéos…</p>
+        <h3>La maison est ouverte</h3>
+        <p>Les Éditions du Lub souhaitent dialoguer avec les libraires, les bibliothèques, les universités, les traducteurs, les chercheurs, les associations culturelles et les autres maisons d'édition. Nous croyons aux échanges, aux partenariats et aux coéditions lorsque celles-ci servent les œuvres et les lecteurs. Tel est notre engagement.</p>
+        <p>Nous ne promettons ni des succès immédiats ni des records de vente. Nous promettons de choisir chaque manuscrit avec sérieux, d'accompagner chaque auteur avec loyauté et de publier des livres que nous serons toujours fiers de défendre. Les Éditions du Lub sont fondées sur cette conviction : la littérature est vivante. Notre rôle est de lui offrir les livres qui la nouriront demain.</p>
+      </section>
 
-    <img src="photo1.jpg" alt="Chaque feuille s'écrit : figuiers !">
+      <img src="photo1.jpg" alt="Chaque feuille s'écrit : figuiers !">
 
-    <section>
-      <h2>Chaque feuille s'écrit : figuiers !</h2>
-      <h4>Présentation</h4>
-      <p>Maison indépendante centrée sur la littérature de création, nous recherchons des voix singulières. Nous accueillons romans, récits, essais et textes théâtraux privilégiant la maîtrise de la langue et l'originalité du regard.</p>
-      <h4>Notre politique</h4>
-      <p>La confiance repose sur un dialogue éditorial exigeant, une transparence totale et un respect scrupuleux de l'œuvre.</p>
-      <h4>Le travail éditorial</h4>
-      <p>Chaque titre bénéficie d'un suivi complet, de la lecture critique à la mise en page, avec pour objectif une qualité formelle égale au contenu.</p>
-      <h4>Conclusion</h4>
-      <p>Les Éditions du Lub souhaitent faire vivre une littérature exigeante et accessible, capable de traverser le temps.</p>
-    </section>
+      <section>
+        <h2>Chaque feuille s'écrit : figuiers !</h2>
+        <h3>Les Éditions du Lub - Dossier institutionnel</h3>
+        <h4>Présentation</h4>
+        <p>Les Éditions du Lub sont une maison d'édition indépendante consacrée à la littérature de création. Elles sont nées de la volonté de défendre des textes dont la qualité d'écriture prime sur les tendances du marché. La maison privilégie une croissance progressive fondée sur la cohérence du catalogue et la relation durable avec ses auteurs.</p>
+        <p>Nous recherchons des romans, des récits, des nouvelles, des fables, des textes historiques, des essais littéraires et philosophiques qui témoignent d'une véritable exigence d'écriture. Notre ambition est de constituer, année après année, un catalogue où chaque livre trouve naturellement sa place.</p>
+        <p>La maison accueille principalement :</p>
+        <ul>
+          <li>Des romans contemporains</li><li>Des romans historiques</li><li>Des récits littéraires</li><li>Des nouvelles et des fables</li><li>De la littérature de fiction lorsqu'elle s'inscrit dans une démarche littéraire</li><li>Des essais philosophiques et des textes théâtraux accessibles à un large public</li>
+        </ul>
+        <p>Nous privilégions les ouvrages qui associent qualité stylistique, richesse de la construction narrative et interrogations intellectuelles. Chaque manuscrit est examiné pour sa valeur propre. Nous accordons une importance particulière à :</p>
+        <ul>
+          <li>La maîtrise de la langue</li><li>L'originalité du regard</li><li>La cohérence de la construction</li><li>La sincérité de la démarche de l'auteur</li>
+        </ul>
+        <p><strong>Nous ne recherchons pas un genre particulier mais une voix.</strong></p>
+        <h4>Notre politique d'auteur</h4>
+        <p>La relation entre un auteur et son éditeur repose sur la confiance, fondée sur :</p>
+        <ul>
+          <li>Un dialogue éditorial exigeant</li><li>La transparence</li><li>Le respect de l'œuvre</li><li>L'accompagnement des auteurs dans la durée</li>
+        </ul>
+        <h4>Le travail éditorial</h4>
+        <p>Chaque ouvrage bénéficie d'un suivi complet comprenant :</p>
+        <ul>
+          <li>Une lecture critique</li><li>Des échanges avec l'auteur</li><li>Une préparation de copie</li><li>Des corrections</li><li>Des propositions de mise en page</li><li>La conception des couvertures</li><li>La publication papier et/ou numérique</li>
+        </ul>
+        <p>L'objectif est de proposer des livres dont la qualité formelle est à la hauteur de leur contenu en privilégiant une diffusion directe auprès des lecteurs grâce à notre site Internet. Nous souhaitons développer des partenariats avec des librairies indépendantes, des bibliothèques, des salons du livre et des institutions culturelles.</p>
+        <p>Des collaborations avec d'autres maisons d'édition pourront être envisagées pour certains ouvrages. Les Éditions du Lub considèrent le livre numérique comme un prolongement naturel du livre imprimé. Les œuvres peuvent être proposées sous différents formats afin de répondre aux usages des lecteurs tout en garantissant le respect du droit d'auteur.</p>
+        <h4>Conclusion</h4>
+        <p>Les Éditions du Lub souhaitent contribuer à faire vivre une littérature exigeante, ouverte et accessible, renouvelant le roman par la création de mythes modernes, avec pour objectif de participer simultanément à leur construction et à leur déconstruction, dégageant ainsi un catalogue cohérent, capable de traverser le temps et de faire découvrir des auteurs dont les œuvres méritent d'être lues, et relues.</p>
+      </section>
 
-    <div class="cta">
-      <h3>La maison</h3>
-      <p>Poursuivez votre visite</p>
-      <a href="maison.html" class="btn">Découvrir →</a>
+      <div class="cta-section">
+        <h3>La maison</h3>
+        <p>Poursuivez votre visite</p>
+        <a href="maison.html" class="cta-button">Découvrir →</a>
+      </div>
     </div>
   </main>
-  <footer><p>© Ivan Sarokan — Éditions du Lub</p></footer>
-  <script>document.addEventListener('contextmenu', e => e.preventDefault());</script>
+
+  <footer>
+    <p>© Ivan Sarokan — Éditions du Lub</p>
+  </footer>
+
+  <script>document.addEventListener('contextmenu', event => event.preventDefault());</script>
 </body>
 </html>
