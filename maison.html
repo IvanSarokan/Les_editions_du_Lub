@@ -2,31 +2,31 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>LES EDITIONS DU LUBE
-
-</title>
-  <style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LES EDITIONS DU LUBE</title>
   
-  body {
-    -webkit-user-select: none; /* Chrome/Safari */
-    -moz-user-select: none;    /* Firefox */
-    -ms-user-select: none;     /* IE/Edge */
-    user-select: none;         /* Standard */
-  }
-<script>
-  document.addEventListener('contextmenu', event => event.preventDefault());
-</script>
+  <style>
+    /* Prévention de la sélection de texte */
+    body {
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    /* Prévention du menu contextuel */
     body {
       font-family: 'Helvetica Neue', sans-serif;
       background-color: #f9f9f9;
       color: #333;
       padding: 2em;
       line-height: 1.6;
+      margin: 0;
     }
 
     main {
       max-width: 60ch;
-      margin: auto;
+      margin: 0 auto;
       text-align: justify;
     }
 
@@ -51,32 +51,55 @@
       border-radius: 5px;
       font-size: 1em;
       cursor: pointer;
+      transition: background-color 0.3s ease;
     }
 
     button:hover {
       background-color: #0056b3;
     }
+
+    button img {
+      max-width: 100%;
+      margin: 0 auto 0.5em;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px;
+      border-top: 1px solid #ddd;
+      margin-top: 3em;
+      color: #666;
+      font-size: 0.9em;
+    }
+
+    div.sidebar {
+      background-color: #f0f0f0;
+      padding: 1.5em;
+      border-radius: 5px;
+      margin-top: 3em;
+    }
   </style>
 </head>
 <body>
+  <script>
+    document.addEventListener('contextmenu', event => event.preventDefault());
+  </script>
 
   <main>
-    <h1>LES EDITIONS DU LUBE
-
-</h1>
-    <img src="photo3.jpg" alt="Photo de l'editeur">
-    <p>Intialement, Ivan Sarokan est publié  par les éditions du Luberon. 
-Cette vieille  maison, crée par Monique Roustan - une amie, anciennement maire de Lauris - ne peut demeurer
-pour la suite
-le port d'ancrage d'une œuvre aussi volumineuse que diverse. Les éditions du Lube prennent donc le relais
+    <h1>LES EDITIONS DU LUBE</h1>
+    
+    <img src="photo3.jpg" alt="Photo de l'éditeur">
+    
+    <p>Initialement, Ivan Sarokan est publié par les éditions du Luberon. 
+Cette vieille maison, créée par Monique Roustan - une amie, anciennement maire de Lauris - ne peut demeurer
+pour la suite le port d'ancrage d'une œuvre aussi volumineuse que diverse. Les éditions du Lube prennent donc le relais
 afin de ne pas dépendre de grandes maisons d'édition. 
 D'autres auteurs viendront sans doute augmenter l'aventure
-et lui donner réelle dimension éditoriale. </p>
+et lui donner réelle dimension éditoriale.</p>
 
     <section>
       <h2>Un refuge pour demain</h2>
       <p>Les éditions du Lube.</p>
-
 
       <p>Situé au cœur du Luberon Sud, à 70 kilomètres de Marseille, à égale distance d'APT de CAVAILLON et de PERTUIS, 
 le village de Lauris est le lieu idéal pour commencer cette aventure. Une terre en partie préservée 
@@ -86,62 +109,40 @@ par la spéculation immobilière ;
 pas tout à fait un hâvre pour retraités oisifs, pas tout à fait un dortoir pour travailleurs marginalisés, 
 loin des clichés et à l'écart des modes, Lauris a réussi à préserver un peu de son âme. 
 Village exemplaire, dirigée aujourd'hui par un ami écrivain, Eric Fontanrava, 
-Lauris hébergera donc - quel luxe - deux maisons d'édition complentaires.
- 
-        <img src="photo5.jpg" alt="Les stelles de Lauris"> 
-    
-</p>
+Lauris hébergera donc - quel luxe - deux maisons d'édition complémentaires.</p>
+      
+      <img src="photo5.jpg" alt="Les stèles de Lauris">
+    </section>
 
     <section>
       <h2>Sarokan - Les deux figuiers</h2>
-      <p>Pour commander le livre ou pour obtenir plus de renseignement sur le premier opus des œuvres d'Ivan Srokan, 
-ou l'auteur lui même, vous pouvez consulter : la page qui lui est consacrée sur le site, 
-le site de l'auteur, ou envoyer un mail à l'adresse suivante afin de commander les deux figuiers:
-
-</p>
+      <p>Pour commander le livre ou pour obtenir plus de renseignements sur le premier opus des œuvres d'Ivan Sarokan, 
+ou sur l'auteur lui-même, vous pouvez consulter : la page qui lui est consacrée sur le site, 
+le site de l'auteur, ou envoyer un mail à l'adresse suivante afin de commander les deux figuiers :</p>
     </section>
 
     <button onclick="window.location.href='mailto:Ivan.Sarokan@orange.fr'">
-  COMMANDER LE LIVRE
+      COMMANDER LE LIVRE
     </button>
-  </main>
-
-</p>
-
-</p>
-    </section>
 
     <button onclick="window.location.href='https://ivansarokan.github.io/Les_editions_du_Lub/index.html'">
-  POURSUIVRE LA VISITE sur la PAGE d'IVAN
+      POURSUIVRE LA VISITE sur la PAGE d'IVAN
     </button>
-  </main>
-
-</p>
-    </section>
 
     <button onclick="window.location.href='https://ivansarokan.fr/index.html'">
-             <img src="photo4.jpg" alt="Une maison de rêve…"> 
-  VISITER LE SITE DE L'AUTEUR
+      <img src="photo4.jpg" alt="Une maison de rêve…"> 
+      VISITER LE SITE DE L'AUTEUR
     </button>
+
+    <div class="sidebar">
+      <h3>Un auteur, un livre</h3>
+      <p>Ivan Sarokan</p>
+      <p><a href="index.html">Découvrir →</a></p>
+    </div>
   </main>
 
-<div>
-<h3>Un auteur, un livre</h3>
-
-<p>Ivan Sarokan</p>
-<p><a href="index.html">Découvrir →</a></p>
-</div>
-
-   
-
-</div>
-
-</main>
-
-<footer style="text-align:center;padding:40px;border-top:1px solid #ddd;">
-
-© Ivan Sarokan — Éditions du Lube
-
-</footer>
+  <footer>
+    © Ivan Sarokan — Éditions du Lube
+  </footer>
 </body>
 </html>
