@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Les éditions du Lub - EDILUB</title>
   <style>
+    
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body { font-family: 'Helvetica Neue', sans-serif; background-color: #f9f9f9; color: #333; line-height: 1.6; user-select: none; }
     main { max-width: 1200px; margin: 0 auto; padding: 2rem; }
@@ -46,6 +47,19 @@
     @media (max-width: 768px) {
       main { padding: 1rem; }
     }
+    /* réduire et centrer l'image des stèles */
+    img.steles {
+  display: block;
+  width: 50%;        /* moitié de la largeur du conteneur */
+  max-width: 300px;  /* optionnel : limite en pixels si vous voulez un plafond */
+  height: auto;
+  margin: 1rem auto; /* centre horizontalement et ajoute un peu d'espace vertical */
+}
+
+/* option responsive : sur mobile rendre l'image un peu plus grande */
+@media (max-width: 768px) {
+  img.steles { width: 80%; max-width: none; }
+}
   </style>
 </head>
 <body>
@@ -62,10 +76,18 @@
 
       <section>
         <h2>Sarokan - Les deux figuiers</h2>
-        <p>Pour obtenir plus de renseignements sur le premier opus des œuvres d'Ivan Sarokan, vous pouvez consulter la page qui lui est consacrée sur le site de l'auteur.</p>
+        <p>Pour obtenir plus de renseignements sur le premier opus des œuvres d'Ivan Sarokan, 
+          vous pouvez consulter la page qui lui est consacrée sur le site de l'auteur.</p>
       </section>
 
       <button class="book-button" onclick="window.location.href='https://ivansarokan.fr/index.html'">VISITER LE SITE D'IVAN</button>
+      
+        <p>Les deux figuiers raconte l'histoire de Léopold Bonifay, embaucheur d'hommes sur le port de la Joliette vers 1900 ; 
+          pour s'être montré solidaire de ses hommes un jour de grève, le contremaître est interdit de port par l'armateur-négrier Vuillemard.
+          L'armateur étant assassiné dans des conditions rocambolesques, l'enquête est confié au chef des douanes Joseph Sicard. Depuis des années, ce dernier
+          tente vainement de coincer le négrier et de lui faire rendre gorge de ses malversations. Un temps, les "chauffe-pieds" de Vuillemard sont les boucs émissaires 
+          idéaux de la justice. La perpicacité du serveur du café Riche va bousuler cette partition mal écrite. 
+        </p>
     </div>
 
     <div class="col-right">
@@ -73,7 +95,7 @@
         <h2>Un refuge pour demain</h2>
         <p>Les éditions du Lub. Situé au cœur du Luberon Sud, à 70 kilomètres de Marseille, à égale distance d'APT de CAVAILLON et de PERTUIS, le village de Lauris est le lieu idéal pour commencer ce cheminement. Une terre en partie préservée des migrations saisonnières et touristiques, une terre qui a su conserver son cachet par l'apport de nouveaux paysans. Une terre qui n'a pas trop été défigurée par la spéculation immobilière ; pas tout à fait un havre pour retraités oisifs, pas tout à fait un dortoir pour travailleurs marginalisés, loin des clichés et à l'écart des modes, Lauris a réussi à préserver un peu de son âme. Village exemplaire, dirigée aujourd'hui par un ami écrivain, Eric Fontanrava, Lauris hébergera donc - quel luxe - deux maisons d'édition complémentaires.</p>
 
-        <img src="photo5.jpg" alt="Les stèles de Lauris">
+        <img src="photo5.jpg" alt="Les stèles de Lauris" class="steles">
       </section>
 
       <section>
