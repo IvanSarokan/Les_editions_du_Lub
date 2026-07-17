@@ -2,21 +2,14 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>IVAN SAROKAN
-
-</title>
+  <title>IVAN SAROKAN</title>
   <style>
-  
-  body {
-    -webkit-user-select: none; /* Chrome/Safari */
-    -moz-user-select: none;    /* Firefox */
-    -ms-user-select: none;     /* IE/Edge */
-    user-select: none;         /* Standard */
-  }
-<script>
-  document.addEventListener('contextmenu', event => event.preventDefault());
-</script>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
+      -webkit-user-select: none; /* Chrome/Safari */
+      -moz-user-select: none;    /* Firefox */
+      -ms-user-select: none;     /* IE/Edge */
+      user-select: none;         /* Standard */
       font-family: 'Helvetica Neue', sans-serif;
       background-color: #f9f9f9;
       color: #333;
@@ -24,119 +17,101 @@
       line-height: 1.6;
     }
 
-    main {
-      max-width: 60ch;
-      margin: auto;
-      text-align: justify;
+    main { max-width: 1200px; margin: 0 auto; padding: 1rem; }
+
+    /* Two-column layout on desktop */
+    @media (min-width: 769px) {
+      main { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: start; }
+      footer { grid-column: 1 / -1; }
+      .col-left { grid-column: 1 / 2; }
+      .col-right { grid-column: 2 / 3; }
     }
 
-    img {
-      max-width: 200px;
-      border-radius: 8px;
+    h1 { font-size: 2rem; margin-bottom: 1rem; text-align: left; }
+
+    img { max-width: 100%; height: auto; border-radius: 8px; display: block; margin: 1rem auto; }
+
+    .author-photo { max-width: 200px; }
+    .figuiers { max-width: 200px; }
+
+    section { margin-top: 1.5rem; background: white; padding: 1rem; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); }
+
+    p { margin-bottom: 1rem; text-align: justify; }
+
+    /* Book-style button reused from maison.html */
+    .book-button {
       display: block;
-      margin: 1em auto;
-    }
-
-    section {
-      margin-top: 3em;
-    }
-
-    button {
-      display: block;
-      margin: 3em auto;
-      padding: 1em 2em;
-      background-color: #007BFF;
-      color: white;
+      width: 100%;
+      max-width: 400px;
+      margin: 2rem auto;
+      padding: 1rem 1.5rem;
+      background: linear-gradient(to bottom,#f8efcf 0%,#efdba2 45%,#e3c26f 100%);
+      color:#4a2e18;
+      text-decoration: none;
+      border-radius: 3px;
+      font-family: Georgia, serif;
+      font-size: 18px;
+      font-weight: bold;
+      letter-spacing: 1px;
       border: none;
-      border-radius: 5px;
-      font-size: 1em;
+      border-left: 22px solid #6a4323;
+      border-right: 8px solid #fff8e7;
+      box-shadow: 0 14px 30px rgba(0,0,0,.28), inset 0 2px 0 rgba(255,255,255,.7), inset 0 -2px 0 rgba(120,90,40,.15);
       cursor: pointer;
+      transition: transform .18s ease, box-shadow .18s ease;
+      text-align: center;
     }
+    .book-button:hover { transform: translateY(-2px); box-shadow: 0 18px 36px rgba(0,0,0,.35), inset 0 2px 0 rgba(255,255,255,.8); }
 
-    button:hover {
-      background-color: #0056b3;
-    }
+    .sidebar { background-color: #f0f0f0; padding: 1.2rem; border-radius: 5px; margin-top: 1rem; text-align:center; }
+
+    footer { text-align:center; padding:40px; border-top:1px solid #ddd; margin-top:2rem; color:#666; font-size:0.9rem; }
+
+    @media (max-width: 768px) { main { padding: 0.5rem; } .book-button { width: 100%; } }
   </style>
 </head>
 <body>
+  <script>document.addEventListener('contextmenu', event => event.preventDefault());</script>
 
   <main>
-    <h1>IVAN SAROKAN
+    <div class="col-left">
+      <h1>IVAN SAROKAN</h1>
+      <img src="photo.jpg" alt="Photo de l'auteur" class="author-photo">
 
-</h1>
-    <img src="photo.jpg" alt="Photo de l'auteur">
-    <p>Ivan Sarokan est né le 1er septembre 1983 à Moscou. D'origine Polovtse et de culture française, 
-        ballotté entre Paris, la Guadeloupe et la Normandie, où il a écrit ses premiers romans, Ivan Sarokan 
-        a exercé divers métiers de vitrier à guide de montagne en passant par barman. Retiré depuis neuf ans 
-        dans un refuge taoïste au pied du Moure Nègre, Sarokan a écrit une quarantaine de romans qui parlent 
-        de la mémoire, de la désillusion, du nécessaire renoncement à toute passion.</p>
+      <p>Ivan Sarokan est né le 1er septembre 1983 à Moscou. D'origine Polovtse et de culture française, ballotté entre Paris, la Guadeloupe et la Normandie, où il a écrit ses premiers romans, Ivan Sarokan a exercé divers métiers de vitrier à guide de montagne en passant par barman. Retiré depuis neuf ans dans un refuge taoïste au pied du Moure Nègre, Sarokan a écrit une quarantaine de romans qui parlent de la mémoire, de la désillusion, du nécessaire renoncement à toute passion.</p>
 
-    <img src="photo1.jpg" alt="Les deux figuiers"> 
-    <section>
-      <h2>Un premier roman</h2>
-      <p>publié aux éditions du Luberon.</p>
+      <img src="photo1.jpg" alt="Les deux figuiers" class="figuiers">
 
+      <section>
+        <h2>Un premier roman</h2>
+        <p>publié aux éditions du Luberon.</p>
+      </section>
 
-      <p>Retravailler l'histoire familiale comme s'il s'agissait d'un roman policier. Faire de son arrière-grand-père un assassin.
-        Dans le Marseille des années 1900, il y a d'abord Bonifay, le boulanger devenu meneur d'hommes, ravalé au rang de cantonnier
-      par la faute de l'armateur Vuillemard. Il y a Jean-Baptiste, le voyou embourgeoisé, amoureux au point de tuer ;
-      et aussi les familles, bien pensantes et omniprésentes, les chauffe-pieds de Vuillemard ramenés du continent noir pour 
-      soigner la goutte du patron,
-      Taras Boulba le serveur à plateau du café riche, et Joseph l'Ancien, le douanier chargé de mener l'enquête sous le contrôle des Brigades du Tigre.
-      Car la politique veille au dessus des humbles citoyens ; personne ne peut lui échapper, pas même monsieur Paul et monsieur Marcel
-      les inévitables barbeaux protosabianistes. Parfois des expressions provençales viennent émailler les conversations, mais soudain 
-      deux ou trois mots en lingala et en bambara viennent rappeler que la ville fut de tout temps cosmopolite. Et puis il y a les figuiers, parce 
-      en dépit de leur intégration citadine, les protagonistes demeurent encore attachés à la terre, à leurs racines ; et même s'ils tentent 
-      de s'en défaire, ils ne peuvent pas tout à fait s'en débarrasser.  </p>
+    </div>
 
-    <section>
-      <h2>Les deux figuiers</h2>
-      <p>Le jour naissait au-dessus des Réformés et Léopold avait pris son café à l’angle du cours Belzunce, 
-        un bon café bien noir trempé d’un demi-sucre, puis il avait rejoint ses hommes. 
-        Ils l’attendaient devant l’eau noire de la Joliette ; les premières lueurs dessinaient des crêtes de safran 
-        entre les coques des navires marchands. Conformément aux rumeurs qui avaient couru l’avant-veille 
-        jusqu’à ses oreilles (dont le lobe s’était allongé avec les années), aucun des portefaix n’avait voulu le suivre. 
-        Aujourd’hui, personne ne monterait à bord des cargos chargés de grains de la Compagnie Marseillaise 
-        Maritime de Navigation. Les autres meneurs d’hommes n’avaient pas eu plus de succès que lui. 
-        - Ils viennent, les tiens, Bonifay ? - Tu galèjes ! Il avait bien tenté d’expliquer aux plus vieux que 
-        cela ne se faisait pas, qu’ils courraient, eux et lui, à la catastrophe, rien n’y avait fait ; 
-        ni les trémolos sur l’air de Manon ni le couplet sur leurs enfants qui crèveraient de faim le soir 
-        à cause d’eux, de leur mauvaise tête. Et les femmes, qu’est-ce qu’elles diraient leurs femmes ?
-         Les hommes étaient restés à leur place habituelle. - Si fa pas acò, leur avait-il répété. Ça ne se fait pas ; 
-         pas comme ça. Pas ici, pas chez nous. Savaient-ils seulement ce qu’ils risquaient, 
-         à croiser les bras sur leurs poitrines et à se croire les plus forts parce qu’ils posaient 
-         la veste bleue à côté d’eux, sur leur sac de marin, faisant saillir leurs muscles sous le tricot 
-         de corps strié de noir et de blanc ? Le souvenir sanglant de la commune de Marseille s’était évanoui dans les mémoires. 
-         Les gars étaient pour la plupart d’anciens paysans ; fraîchement débarqués de l’arrière-pays, 
-         ils n’avaient pas connu la mitraille. Ils n’avaient pas ancré comme lui dans leur caboche l’arrivée des troupes 
-         impériales à deux pas des galères - les traces des obus avaient disparu dans la pierre -
-         le bruit des canons tournés contre la mairie, la préfecture bombardée depuis Notre-Dame de la Garde. 
-         Ils ignoraient le goût du sang. - Nous sommes en République, maintenant, dit l’un d’eux. 
-         - Trois francs de plus… une misère, reprit un autre. Il ne pouvait pas tout à fait leur donner tort.</p>
-    </section>
+    <div class="col-right">
+      <!-- La seconde colonne commence ici avec l'extrait -->
+      <section>
+        <p>Retravailler l'histoire familiale comme s'il s'agissait d'un roman policier. Faire de son arrière-grand-père un assassin. Dans le Marseille des années 1900, il y a d'abord Bonifay, le boulanger devenu meneur d'hommes, ravalé au rang de cantonnier par la faute de l'armateur Vuillemard. Il y a Jean-Baptiste, le voyou embourgeoisé, amoureux au point de tuer ; et aussi les familles, bien pensantes et omniprésentes, les chauffe-pieds de Vuillemard ramenés du continent noir pour soigner la goutte du patron, Taras Boulba le serveur à plateau du café riche, et Joseph l'Ancien, le douanier chargé de mener l'enquête sous le contrôle des Brigades du Tigre. Car la politique veille au dessus des humbles citoyens ; personne ne peut lui échapper, pas même monsieur Paul et monsieur Marcel les inévitables barbeaux protosabianistes. Parfois des expressions provençales viennent émailler les conversations, mais soudain deux ou trois mots en lingala et en bambara viennent rappeler que la ville fut de tout temps cosmopolite. Et puis il y a les figuiers, parce qu'en dépit de leur intégration citadine, les protagonistes demeurent encore attachés à la terre, à leurs racines ; et même s'ils tentent de s'en défaire, ils ne peuvent pas tout à fait s'en débarrasser.</p>
 
-    <button onclick="window.location.href='mailto:Ivan.Sarokan@orange.fr'">
-  Commander le livre
-    </button>
+        <section>
+          <h2>Les deux figuiers</h2>
+          <p>Le jour naissait au-dessus des Réformés et Léopold avait pris son café à l’angle du cours Belzunce, un bon café bien noir trempé d’un demi-sucre, puis il avait rejoint ses hommes. Ils l’attendaient devant l’eau noire de la Joliette ; les premières lueurs dessinaient des crêtes de safran entre les coques des navires marchands. Conformément aux rumeurs qui avaient couru l’avant-veille jusqu’à ses oreilles (dont le lobe s’était allongé avec les années), aucun des portefaix n’avait voulu le suivre. Aujourd’hui, personne ne monterait à bord des cargos chargés de grains de la Compagnie Marseillaise Maritime de Navigation. Les autres meneurs d’hommes n’avaient pas eu plus de succès que lui...</p>
+        </section>
+      </section>
 
+      <a class="book-button" href="mailto:Ivan.Sarokan@orange.fr">Commander le livre</a>
 
-<div>
+      <div class="sidebar">
+        <h3>La maison</h3>
+        <p>Une nouvelle maison d'édition.</p>
+        <p><a href="index.html">Découvrir →</a></p>
+      </div>
+    </div>
 
-<h3>La maison</h3>
-
-<p>Une nouvelle maison d'édition.</p>
-
-<p><a href="index.html">Découvrir →</a></p>
-
-</div>
-
-
-</main>
-
-<footer style="text-align:center;padding:40px;border-top:1px solid #ddd;">
-
-© Ivan Sarokan — Éditions du Lube
-
-</footer>
+    <footer>
+      © Ivan Sarokan — Éditions du Lub
+    </footer>
+  </main>
 </body>
 </html>
