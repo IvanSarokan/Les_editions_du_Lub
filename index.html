@@ -32,9 +32,34 @@
     a:hover { color: #0056b3; text-decoration: underline; }
     
     .cta-section { text-align: center; margin-top: 2rem; padding-top: 2rem; border-top: 1px solid #e0e0e0; }
-    .cta-button { display: inline-block; margin-top: 1rem; padding: 1em 2em; background-color: #007BFF; color: white; text-decoration: none; border-radius: 5px; transition: background-color 0.3s ease; }
-    .cta-button:hover { background-color: #0056b3; }
-    
+
+    /* Bouton style "livre" repris de maison.html */
+    .book-button {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 1em 2em;
+      background: linear-gradient(to bottom,#f8efcf 0%,#efdba2 45%,#e3c26f 100%);
+      color: #4a2e18;
+      text-decoration: none;
+      border-radius: 5px;
+      font-family: Georgia, serif;
+      font-size: 18px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      border: none;
+      border-left: 22px solid #6a4323; /* dos du livre */
+      border-right: 8px solid #fff8e7; /* tranche des pages */
+      box-shadow: 0 14px 30px rgba(0,0,0,.28), inset 0 2px 0 rgba(255,255,255,.7), inset 0 -2px 0 rgba(120,90,40,.15);
+      cursor: pointer;
+      transition: transform .18s ease, box-shadow .18s ease;
+      display: inline-block;
+    }
+
+    .book-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 18px 36px rgba(0,0,0,.35), inset 0 2px 0 rgba(255,255,255,.8);
+    }
+
     footer { text-align: center; padding: 2rem; margin-top: 3rem; border-top: 1px solid #ddd; color: #666; font-size: 0.9rem; grid-column: 1 / -1; }
 
     /* Layout sur laptop : deux colonnes */
@@ -48,6 +73,7 @@
     /* Mobile */
     @media (max-width: 768px) {
       main { padding: 1rem; }
+      .book-button { width: 100%; display: block; text-align: center; }
     }
   </style>
 </head>
@@ -61,15 +87,15 @@
       <section>
         <h2>Le Manifeste des Éditions du Lub</h2>
         <h3>Pourquoi une nouvelle maison d'édition ?</h3>
-        <p>Publier un livre, c'est transmettre une voix à la rencontre entre un auteur et un auditeur ; l'éditeur n'en est ni le propriétaire ni l'arbitre, mais le passeur. Les Éditions du Lub - EDILUB- incarnent cette philosophie en donnant une plateforme à des voix authentiques et exigeantes.</p>
+        <p>Publier un livre, c'est transmettre une voix à la rencontre entre un auteur et un auditeur ; l'éditeur n'en est ni le propriétaire ni l'arbitre, mais le passeur. Les Éditions du Lub[...]</p>
         <h3>Vers une littérature durable !</h3>
-        <p>Privilégiant les œuvres qui demeurent, romans, récits, fables, chroniques, textes historiques ou philosophiques, nous publions des textes ayant une exigence d'écriture et une vision novatrice du monde.</p>
+        <p>Privilégiant les œuvres qui demeurent, romans, récits, fables, chroniques, textes historiques ou philosophiques, nous publions des textes ayant une exigence d'écriture et une vision[...]</p>
         <h3>Une maison indépendante</h3>
-        <p>L'indépendance nous permet de choisir nos publications selon leur valeur littéraire, sans dépendre des effets de mode, des impératifs de rentabilité ou de calendrier. Chaque ouvrage est traité avec le même sérieux et le même respect.</p>
+        <p>L'indépendance nous permet de choisir nos publications selon leur valeur littéraire, sans dépendre des effets de mode, des impératifs de rentabilité ou de calendrier. Chaque ouvrage es[...]</p>
         <h3>Pour un catalogue cohérent</h3>
-        <p>EDILUB - Les Éditions du Lub - souhaite constituer, au fil des années, un ensemble d'œuvres qui dialoguent entre elles : romans, fictions historiques, récits philosophiques, textes oubliés, essais littéraires.</p>
+        <p>EDILUB - Les Éditions du Lub - souhaite constituer, au fil des années, un ensemble d'œuvres qui dialoguent entre elles : romans, fictions historiques, récits philosophiques, textes oubliés[...]</p>
         <h3>Une maison ouverte</h3>
-        <p>Souhaitant dialoguer avec les libraires, les bibliothèques, les universités, les traducteurs, les chercheurs, les associations culturelles et les autres maisons d'édition, nous ne promettons ni des succès immédiats ni des records de vente. Nous promettons de choisir chaque manuscrit avec sérieux, d'accompagner chaque auteur avec loyauté et de publier des livres dignes de ce nom.</p>
+        <p>Souhaitant dialoguer avec les libraires, les bibliothèques, les universités, les traducteurs, les chercheurs, les associations culturelles et les autres maisons d'édition, nous ne promet[...]</p>
       </section>
      <img src="photo1.jpg" alt="Chaque feuille s'écrit : figuiers !">
      
@@ -78,8 +104,8 @@
         <h2>Chaque feuille s'écrit figuier</h2>
         <h3>Les Éditions du Lub - EDILUB - Dossier institutionnel</h3>
         <h4>Présentation</h4>
-        <p>Les Éditions du Lub sont une maison d'édition indépendante consacrée à la littérature de création. Elles sont nées de la volonté de défendre des textes dont la qualité d'écriture et la profondeur sont les maitres mots.</p>
-        <p>Nous recherchons des romans, des récits, des nouvelles, des fables, des textes historiques, des essais littéraires et philosophiques qui témoignent d'une véritable exigence d'écriture.</p>
+        <p>Les Éditions du Lub sont une maison d'édition indépendante consacrée à la littérature de création. Elles sont nées de la volonté de défendre des textes dont la qualité d'écritur[...]</p>
+        <p>Nous recherchons des romans, des récits, des nouvelles, des fables, des textes historiques, des essais littéraires et philosophiques qui témoignent d'une véritable exigence d'écriture.[...]</p>
         <p>La maison accueille principalement :</p>
         <ul>
           <li>Des romans contemporains</li>
@@ -88,7 +114,7 @@
           <li>Des nouvelles et des fables</li>
           <li>De la littérature de fiction lorsqu'elle s'inscrit dans une démarche d'exigence</li>
         </ul>
-        <p>Nous privilégions les ouvrages qui associent qualité stylistique, richesse de la construction narrative et interrogations intellectuelles. Chaque manuscrit est examiné pour sa valeur intrinsèque selon quatre critères :</p>
+        <p>Nous privilégions les ouvrages qui associent qualité stylistique, richesse de la construction narrative et interrogations intellectuelles. Chaque manuscrit est examiné pour sa valeur int[...]</p>
         <ul>
           <li>La maîtrise de la langue</li>
           <li>L'originalité du regard</li>
@@ -115,16 +141,16 @@
           <li>Des propositions de mise en page</li>
           <li>La conception des couvertures</li>
         </ul>
-        <p>L'objectif est de proposer des livres dont la qualité formelle est à la hauteur de leur contenu en privilégiant une diffusion directe auprès des lecteurs grâce à notre site Internet.</p>
-        <p>Des collaborations avec d'autres maisons d'édition pourront être envisagées pour certains ouvrages. Les Éditions du Lub considèrent le livre numérique comme un prolongement naturel du livre papier.</p>
+        <p>L'objectif est de proposer des livres dont la qualité formelle est à la hauteur de leur contenu en privilégiant une diffusion directe auprès des lecteurs grâce à notre site Internet.[...]</p>
+        <p>Des collaborations avec d'autres maisons d'édition pourront être envisagées pour certains ouvrages. Les Éditions du Lub considèrent le livre numérique comme un prolongement naturel du[...]</p>
         <h4>Conclusion</h4>
-        <p>Les Éditions du Lub - EDILUB - souhaitent contribuer à faire vivre une littérature exigeante, ouverte et accessible, renouvelant le roman par la création de mythes modernes, avec pour objectif de proposer des livres dignes de ce nom.</p>
+        <p>Les Éditions du Lub - EDILUB - souhaitent contribuer à faire vivre une littérature exigeante, ouverte et accessible, renouvelant le roman par la création de mythes modernes, avec pour o[...]</p>
       </section>
     </div>
  <div class="cta-section">
         <h3>La maison</h3>
         <p>Poursuivez votre visite</p>
-        <a href="maison.html" class="cta-button">Découvrir →</a>
+        <a href="maison.html" class="book-button">Découvrir →</a>
       </div>
     <footer>
       <p>© EDILUB — Éditions du Lub</p>
