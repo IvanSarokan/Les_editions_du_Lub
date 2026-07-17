@@ -41,27 +41,85 @@
       margin-top: 3em;
     }
 
-    button {
-      display: block;
-      margin: 3em auto;
-      padding: 1em 2em;
-      background-color: #006BFF;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      font-size: 1em;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-    }
+    display:block;
+    margin:3em auto;
 
-    button:hover {
-      background-color: #0026b3;
-    }
+    padding:15px 38px;
 
-    button img {
-      max-width: 100%;
-      margin: 0 auto 0.5em;
-    }
+    background:#f8f4ec;
+
+    color:#6b3c2c;
+
+    border:1px solid #b89b6c;
+
+    border-radius:2px;
+
+    font-family:Georgia, serif;
+    font-size:17px;
+    letter-spacing:1px;
+
+    cursor:pointer;
+
+    transition:all .25s ease;
+
+    box-shadow:0 3px 12px rgba(0,0,0,.08);
+
+}
+
+button:hover{
+
+    background:#e8dcc3;
+
+    color:#3f261d;
+
+    border-color:#8f7350;
+
+    transform:translateY(-2px);
+
+}
+
+button img{
+
+    display:block;
+
+    margin:0 auto 12px auto;
+
+    max-width:100%;
+
+}
+Le résultat sera un bouton crème, avec une légère bordure dorée, proche d'une esthétique Gallimard ou José Corti.
+Ou encore plus "éditeur"
+Si tu veux un rendu très sobre, presque comme une couverture de livre :
+button{
+
+    display:block;
+    margin:3em auto;
+
+    padding:14px 36px;
+
+    background:white;
+
+    color:#7b2d26;
+
+    border:2px solid #7b2d26;
+
+    font-family:Georgia, serif;
+    font-size:16px;
+    letter-spacing:2px;
+    text-transform:uppercase;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+button:hover{
+
+    background:#7b2d26;
+
+    color:white;
+
+}
 
     footer {
       text-align: center;
@@ -93,9 +151,19 @@
     
     <p>Initialement, Ivan Sarokan est publié par les éditions du Luberon. 
 Cette vieille maison, créée par Monique Roustan - une amie, anciennement maire de Lauris - ne peut demeurer
-pour la suite le port d'ancrage d'une œuvre aussi volumineuse que diverse. Les éditions du Lub (EDILUB)  prennent donc le relais, l'auteur ne voulant pas dépendre de grandes maisons d'édition. 
+pour la suite le port d'ancrage d'une œuvre aussi volumineuse que diverse. Les éditions du Lub (EDILUB)  prennent donc le relais, l'auteur ne voulant pas dépendre de grandes structures anonymes. 
 D'autres auteurs viendront par la suite compléter l'aventure
 et lui donner une réelle dimension éditoriale.</p>
+
+    <section>
+      <h2>Sarokan - Les deux figuiers</h2>
+      <p>Pour cobtenir plus de renseignements sur le premier opus des œuvres d'Ivan Sarokan, 
+vous pouvez consulter la page qui lui est consacrée sur le site de l'auteur. </p>
+    </section>
+
+    <button onclick="window.location.href='https://ivansarokan.fr/index.html'">
+      VISITER LE SITE D'IVAN
+    </button>
 
     <section>
       <h2>Un refuge pour demain</h2>
@@ -112,21 +180,18 @@ Lauris hébergera donc - quel luxe - deux maisons d'édition complémentaires.</
       <img src="photo5.jpg" alt="Les stèles de Lauris">
     </section>
 
-    <section>
-      <h2>Sarokan - Les deux figuiers</h2>
-      <p>Pour commander nos livres ou pour obtenir plus de renseignements sur le premier opus des œuvres d'Ivan Sarokan, 
-ou sur l'auteur lui-même, vous pouvez consulter : la page qui lui est consacrée sur le site, 
-le site de l'auteur, ou envoyer un mail à son adresse :</p>
-    </section>
-
-    <button onclick="window.location.href='mailto:contact@ivansarokan.fr'">
-      CONTACTS
+     <section>
+      <h2>Davantage d'information</h2>
+    <p>Pour joindre les éditions du Lub - EDILUB - et en savoir plus sur les différentes 
+      manifestations qu'elles organisnt, vous pouvez nous ccontacter ici. </p>
+   
+ <button onclick="window.location.href='mailto:contact@ivansarokan.fr'">
+      CONTACTS COURRIEL
     </button>
+ </section>
 
-    <button onclick="window.location.href='https://ivansarokan.fr/index.html'">
-      VISITER LE SITE D'IVAN
-    </button>
-
+    <p>Pour demeurer sur notre site et poursuivre sa visite : </p>
+    
     <div class="sidebar">
       <h3>Un auteur, un livre</h3>
       <p>Ivan Sarokan</p>
