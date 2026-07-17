@@ -65,55 +65,102 @@
     box-shadow:0 3px 12px rgba(0,0,0,.08);
 
 }
-button {
+button{
 
     display:block;
 
-    margin:40px auto;
+    width:400px;
+    height:120px;
 
-    width:340px;
-    height:90px;
+    margin:45px auto;
 
-    background:linear-gradient(
-        to bottom,
-        #f9efc8 0%,
-        #efd892 45%,
-        #e3bf63 100%
-    );
+    background:
+        linear-gradient(to bottom,#f8efcf 0%,#efdba2 45%,#e3c26f 100%);
 
-    color:#4a2b12;
+    color:#4a2e18;
 
     font-family:Georgia,serif;
-    font-size:22px;
+    font-size:24px;
     font-weight:bold;
+    letter-spacing:1px;
 
-    border:2px solid #8f6a2b;
-    border-left:14px solid #6d4b1e;
+    border:none;
+
+    /* DOS DU LIVRE */
+    border-left:28px solid #6a4323;
+
+    /* TRANCHE DES PAGES */
+    border-right:8px solid #fff8e7;
 
     border-radius:3px;
 
-    cursor:pointer;
+    position:relative;
 
     box-shadow:
-        0 8px 20px rgba(0,0,0,.25),
-        inset 0 1px 1px rgba(255,255,255,.8);
+        0 14px 30px rgba(0,0,0,.28),
+        inset 0 2px 0 rgba(255,255,255,.7),
+        inset 0 -2px 0 rgba(120,90,40,.15);
 
-    transition:.25s;
+    cursor:pointer;
+
+    transition:.18s ease;
+
+}
+
+/* Double filet de couverture */
+
+button::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:10px;
+    left:18px;
+    right:14px;
+    bottom:10px;
+
+    border:2px solid rgba(120,75,35,.55);
+
+    pointer-events:none;
+
+}
+
+/* Petit filet intérieur */
+
+button::after{
+
+    content:"";
+
+    position:absolute;
+
+    top:18px;
+    left:26px;
+    right:22px;
+    bottom:18px;
+
+    border:1px solid rgba(255,255,255,.45);
+
+    pointer-events:none;
+
 }
 
 button:hover{
 
-    background:linear-gradient(
-        to bottom,
-        #fff4d4 0%,
-        #f5df9b 45%,
-        #ebc96b 100%
-    );
-
-    transform:translateY(-3px);
+    transform:translateY(-2px);
 
     box-shadow:
-        0 12px 26px rgba(0,0,0,.30);
+        0 18px 36px rgba(0,0,0,.35),
+        inset 0 2px 0 rgba(255,255,255,.8);
+
+}
+
+button:active{
+
+    transform:translateY(1px);
+
+    box-shadow:
+        0 8px 18px rgba(0,0,0,.25);
 
 }
 
@@ -121,9 +168,9 @@ button img{
 
     display:block;
 
-    margin:0 auto 8px auto;
+    margin:0 auto 10px auto;
 
-    max-height:32px;
+    max-height:34px;
 
 }
     footer {
